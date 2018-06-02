@@ -1,0 +1,11 @@
+source: .
+config_url: https://chiahua0515.github.io
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "global"
+gems:
+  - jekyll-redirect-from
+encoding: utf-8
