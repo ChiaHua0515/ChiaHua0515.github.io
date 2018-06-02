@@ -1,7 +1,15 @@
-<header class="Page-header">
+<header class="Page-header" style="
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(
+  {% if page.og_image %}
+    {{ page.og_image }}
+  {% else %}
+    '/img/banner-chiahua0515.jpg'
+  {% endif %}
+    ) center / cover;
+">
   <div class="ui flex container">
     <div class="left">
-      <img class="ui small bordered avatar image" src="img/avatar-chiahua0515.png" />    
+      <img class="ui small bordered avatar image" src="/img/avatar-chiahua0515.png" />    
     </div>
     <div class="right flex align-end">
       <h1 class="ui inverted header">

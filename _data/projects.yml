@@ -1,14 +1,38 @@
 - 2018:
   - date: "6/1"
     title: "活動 / 專案 / 計畫標題"
-    description: "活動 / 專案 / 計畫描述"
-    link: "blulu.tw"
+    title_en: "English Title"
+    description: "活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述。"
+    description_en: "English description. English description. English description."
+    link:
+      - url: "/blulu"
+        title: "連結一顯示文字"
+        title_en: "English Link Title"
+      - url: "/blulu"
+        title: "連結二顯示文字"
+        title_en: "English Link Title"
   - date: "6/1"
     title: "活動 / 專案 / 計畫標題"
-    description: "活動 / 專案 / 計畫描述"
-    link: "blulu.tw"
+    title_en: 
+    description: "活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述。"
+    description_en: 
+    link:
+      - url: "/blulu"
+        title: "連結一顯示文字"
+        title_en: 
+      - url: "/blulu"
+        title: "連結二顯示文字"
+        title_en: 
 - 2017:
   - date: "6/1"
     title: "活動 / 專案 / 計畫標題"
-    description: "活動 / 專案 / 計畫描述"
-    link: "blulu.tw"
+    title_en: "English Title"
+    description: "活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述。"
+    description_en: "English description. English description. English description."
+    link:
+      - url: "/blulu"
+        title: "連結一顯示文字"
+        title_en: "English Link Title"
+      - url: "/blulu"
+        title: "連結二顯示文字"
+        title_en: "English Link Title"

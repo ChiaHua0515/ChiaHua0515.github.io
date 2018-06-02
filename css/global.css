@@ -1,5 +1,5 @@
 html, body {
-  background-color: hsla(180,100%,80%,0.1);
+  background-color: hsla(44,100%,97%,1);
 }
 
 .flex {
@@ -15,8 +15,6 @@ html, body {
 }
 
 .Page-header {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)),
-  url('/img/banner-chiahua0515.jpg') center / cover;
   position: relative;
 }
 
@@ -35,14 +33,6 @@ html, body {
   flex-grow: 0;
 }
 
-.Page-header .flex .right {
-  margin-bottom: 1rem;
-}
-
-.Page-subheader .flex .right {
-  margin-top: 1rem;
-}
-
 .Page-header .flex .right,
 .Page-subheader .flex .right,
 #homepage .flex .right {
@@ -51,12 +41,77 @@ html, body {
   flex-grow: 1;
 }
 
+.Page-header .flex .right {
+  margin-bottom: 1rem;
+}
+
+.Page-subheader .flex .right {
+  margin-top: 1rem;
+}
+
+#homepage .flex .left .timeline,
+#homepage .flex .right {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#homepage .flex .right {
+  margin-bottom: 1rem;
+}
+
 #homepage .timeline {
-  border-right: 4px hsla(0,0%,0%,0.3) solid;
+  border-right: 2px hsla(177,100%,35%,1) solid;
+  text-align: right;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  height: 100%;
+}
+
+#homepage .timeline.year {
+  color: hsla(177,100%,35%,1);
+}
+
+#homepage .timeline.year:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 16px;
+  width: 0.5rem;
+  height: 2px;
+  background-color: hsla(177,100%,35%,1);
+}
+
+#homepage .timeline:not(.year):after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px hsla(177,100%,35%,1) solid;
+}
+
+#redirect {
+  text-align: center;
+  padding: 1rem 0;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+#redirect .url {
+  padding: 1rem 0;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 767px) {
 #homepage .flex .left {
   width: 6rem;
+}
+#homepage .ui.stackable.grid {
+  margin-left: -1rem!important;
+  margin-right: -1rem!important;
 }
 }

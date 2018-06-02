@@ -1,0 +1,25 @@
+---
+layout: global
+---
+
+<main id="redirect">
+  <div class="ui container">
+    <div class="ui warning message">
+      <div class="content">
+        <h2 class="ui header">
+          將您導向至...
+          <div class="sub header">
+            Redirecting to...
+          </div>
+        </h2>
+        <p class="url">
+          {{ page.redirect }}
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script type="text/javascript">
+  window.location = "{{ page.redirect }}"
+</script>

@@ -6,13 +6,15 @@
 <html>
 <head>
 
-  {% assign sitename = site.data.site.name %}
-
   {% assign og_url = page.url %}
 
-  {% assign og_title = page.og_title %}
-
   {% assign favicon = site.data.site.favicon %}
+
+  {% assign sitename = site.data.site.name %}
+  {% assign sitename_en = site.data.site.name_en %}
+
+  {% assign og_title = page.og_title %}
+  {% assign og_title_en = page.og_title_en %}
 
   {% if page.og_image %}
     {% assign og_image = page.og_image %}
@@ -26,26 +28,34 @@
     {% assign og_description = site.data.site.description %}
   {% endif %}
 
+  {% if page.og_description_en %}
+    {% assign og_description_en = page.og_description_en %}
+  {% else %}
+    {% assign og_description_en = site.data.site.description_en %}
+  {% endif %}
+
 <!-- 以上 og 素材來源處理完畢，開始套到 meta 標籤中 -->
 
   <meta charset="utf-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
 
   <meta property="og:type" content="website" />
+
   <meta property="og:url" content="{{ site.config_url }}{{ og_url }}" />
 
-  <meta name="description" content="{{ og_description }}" />
-  <meta property="og:description" content="{{ og_description}}" /> 
-  <meta name="twitter:description" content="{{ og_description }}"/>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ favicon }}" />
+
+  <meta property="og:title" content="{{ og_title }} {{ og_title_en }} | {{ sitename }} {{ sitename_en }}" />
+  <meta name="twitter:title" content="{{ og_title }} {{ og_title_en }} | {{ sitename }} {{ sitename_en }}" />
+  <title>{{ og_title }}  {{ og_title_en }} | {{ sitename }} {{ sitename_en }}</title>
 
   <meta property="og:image" content="{{ og_image }}" /> 
   <meta name="twitter:image:src" content="{{ og_image }}" />
 
-  <meta property="og:title" content="{{ og_title }} | {{ sitename }}" />
-  <meta name="twitter:title" content="{{ og_title }} | {{ sitename }}" />
-  <title>{{ og_title }} | {{ sitename }}</title>
-
-  <link rel="shortcut icon" type="image/x-icon" href="{{ favicon }}" />
+  <meta name="description" content="{{ og_description }} {{ og_description_en }}" />
+  <meta property="og:description" content="{{ og_description }} {{ og_description_en }}" /> 
+  <meta name="twitter:description" content="{{ og_description }} {{ og_description_en }}"/>
 
   <link rel="stylesheet" href="/css/semantic.min.css"/>
 
