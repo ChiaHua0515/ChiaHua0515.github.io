@@ -1,9 +1,21 @@
+<hr class="ui hidden divider" />
 
-<footer id="footer" class="ui basic segment">
-
-  <div class="ui stripe container">
-
+<footer class="Page-footer" style="
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(
+  {% if page.og_image %}
+    {{ page.og_image }}
+  {% else %}
+    '/img/banner-chiahua0515.jpg'
+  {% endif %}
+    ) center / cover;
+">
+  <div class="ui container">
+    <p>
+      <a href="https://github.com/ChiaHua0515/ChiaHua0515.github.io" target="_blank">
+        <i class="icon github"></i>
+        Source Code
+      </a>
+    </p>
 
   </div>
-
 </footer>

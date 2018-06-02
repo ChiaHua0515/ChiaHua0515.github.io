@@ -13,7 +13,9 @@ layout: global
           </div>
         </h2>
         <p class="url">
-          {{ page.redirect }}
+          <a href="{{ page.redirect }}" target="_blank">
+            {{ page.redirect }}
+          </a>
         </p>
       </div>
     </div>
@@ -21,5 +23,5 @@ layout: global
 </main>
 
 <script type="text/javascript">
-  window.location = "{{ page.redirect }}"
+//  window.location = "{{ page.redirect }}"
 </script>

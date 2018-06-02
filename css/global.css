@@ -2,6 +2,25 @@ html, body {
   background-color: hsla(44,100%,97%,1);
 }
 
+body {
+  min-height: 100vh;
+}
+
+body>header,
+body>footer {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+body>main {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+a, a:link, a:hover {
+  color: inherit;
+}
+
 .flex {
   display: flex!important;
 }
@@ -10,8 +29,18 @@ html, body {
   align-items: flex-end;
 }
 
+.flex.direction-column {
+  flex-direction: column;
+}
+
 .inline-block {
   display: inline-block;
+}
+
+.Page-footer {
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0;
 }
 
 .Page-header {
@@ -97,6 +126,7 @@ html, body {
 #redirect {
   text-align: center;
   padding: 1rem 0;
+  width: 100%;
   max-width: 30rem;
   margin: 0 auto;
 }
