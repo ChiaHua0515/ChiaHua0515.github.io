@@ -2,7 +2,7 @@
 
 Chia-Hua Lu v.s. Proposal! Live at: http://chiahua0515.github.io/
 
-## 新增轉址頁面的步驟
+## 步驟：新增轉址跳板
 
 1. 在跟目錄開一個新的檔案
     - 登入 GitHub 並打開 https://github.com/ChiaHua0515/ChiaHua0515.github.io 這一頁
@@ -24,7 +24,7 @@ Chia-Hua Lu v.s. Proposal! Live at: http://chiahua0515.github.io/
     - 上傳後在資料夾畫面中檢查圖檔的副檔名，如果不是 `png` 的話，去步驟 2. 開的 `index.html` 檔案中，把 `og_image: "image.png"` 的 `png` 改成你的檔案的副檔名（通常圖片檔的副檔名不是 `png` 就是 `jpg`），改完一樣按 `Commit changes` 存檔
 5. 完成～
 
-## 新增首頁資料的步驟
+## 步驟：新增首頁資料
 
 1. 登入 GitHub 並打開 https://github.com/ChiaHua0515/ChiaHua0515.github.io/blob/master/_data/projects.yml 這個檔案
 2. 按鉛筆按鈕編輯，格式抄現有的範本即可，改完按 `Commit changes` 成功後首頁的列表就會更新了
