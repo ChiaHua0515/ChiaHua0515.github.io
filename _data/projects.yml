@@ -1,25 +1,22 @@
-- 2018:
-  - date: "6/1"
+- 基礎資料:
+  - date: "簡介"
     title: "家華的介紹"
     title_en: "About Chia-Hua"
-    description: "活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述。"
+    description: " 家華的背景跟她合作需要的行政訊息 "
     description_en: "English description. English description. English description."
     link:
       - url: "https://about.me/chiahua0515"
         title: "關於家華"
         title_en: "About Chia-Hua"
-  - date: "6/1"
-    title: "活動 / 專案 / 計畫標題"
-    title_en: 
-    description: "活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述。"
+  - date: "核銷資料"
+    title: "家華的相關個資"
+    title_en: "Remittance"
+    description: " 戶籍/住址/聯繫方式/帳號"
     description_en: 
     link:
-      - url: "/blulu"
-        title: "連結一顯示文字"
-        title_en: 
-      - url: "/blulu"
-        title: "連結二顯示文字"
-        title_en: 
+      - url: "https://docs.google.com/document/d/1D6Ap9efYEKojQmuZpBRq0NURjhAM3C9kPQXSgLH5k20/edit"
+        title: "關於家華的核銷訊息"
+        title_en: "Remittance" 
 - 2017:
   - date: "6/1"
     title: "活動 / 專案 / 計畫標題"
