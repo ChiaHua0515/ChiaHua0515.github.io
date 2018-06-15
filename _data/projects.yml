@@ -1,16 +1,13 @@
 - 2018:
   - date: "6/1"
-    title: "活動 / 專案 / 計畫標題"
-    title_en: "English Title"
+    title: "家華的介紹"
+    title_en: "About Chia-Hua"
     description: "活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述，活動 / 專案 / 計畫描述。"
     description_en: "English description. English description. English description."
     link:
-      - url: "/blulu"
-        title: "連結一顯示文字"
-        title_en: "English Link Title"
-      - url: "/blulu"
-        title: "連結二顯示文字"
-        title_en: "English Link Title"
+      - url: "https://about.me/chiahua0515"
+        title: "關於家華"
+        title_en: "About Chia-Hua"
   - date: "6/1"
     title: "活動 / 專案 / 計畫標題"
     title_en: 
